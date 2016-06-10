@@ -1,0 +1,61 @@
+<div id=''class=''style=''>
+
+	<!-- DESKTOP -->
+	<div id=''class='hidden-sm hidden-xs cinz'style='padding:2%;'>
+		<div id=''class='col-md-12'style='text-align:center;'>
+			
+			<a ng-href='{{project.web}}'ng-repeat='project in projects'id=''class='col-md-3'style='border:1px none;height:45vh;color:black;'> 
+			
+				<div id=''class='col-md-12 'style='border-bottom:1px solid black;margin-bottom:2%;'>
+				<h2>{{project.name}}</h2>
+
+				</div>
+				<div id=''class='col-md-10 col-md-offset-1'style='height:20vh;
+												  background:url({{project.img}}) no-repeat;background-size:contain;margin-bottom:2%;'>
+
+				</div>
+				<div id=''class='col-md-8 col-md-offset-2 'style='font-size:1.2em;'>
+
+				{{project.desc}}
+				</div>
+			
+			 </a>
+
+		</div>
+		
+
+	</div>
+
+
+	<!-- MOBILE -->
+	<div id=''class='hidden-md hidden-lg cinz'style=''>
+		<div id=''class='col-xs-12'style='text-align:center;'>
+
+			<a ng-href='{{project.web}}'ng-repeat='project in projects'id=''class='col-xs-12'style='border-right:1px solid black;border-bottom:1px solid black;height:auto;margin-bottom:3%;color:black;'>
+
+				<div id=''class='col-xs-12'style='border-bottom:1px solid black;margin-bottom:2%;'>
+				<h3>{{project.name}}</h3>
+
+				</div>
+				<div id=''class='col-xs-12'style='height:30vh;background:url({{project.img}}) no-repeat;background-size:contain;margin-bottom:2%;'>
+
+				</div>
+				<div id=''class='col-xs-12'style='font-size:1.2em'>
+
+				{{project.desc}}
+
+				</div>
+
+
+
+			</a>
+
+
+		</div>
+
+
+
+	</div>
+
+
+</div>

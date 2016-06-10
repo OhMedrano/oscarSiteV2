@@ -1,0 +1,325 @@
+<div id=''class=''style=''>
+
+	<!-- DESKTOP -->
+	<div id=''class='hidden-xs hidden-sm'style=''>
+
+		<div id=''class='col-md-10 col-md-offset-1 cinz 'style='border:1px none;height:84vh;padding:0;margin-bottom:2%;'>
+
+			<div id=''class='col-md-4'style='border:1px none;height:100%'>
+
+					<div id=''class='col-md-12'style='padding:2%'>
+
+					</div>
+	
+					<div id=''class='col-md-6 col-md-offset-3'style='border-radius:100%;border:1px none;height:28%;overflow:hidden;'>
+	
+						<img src='/images/mainFace.jpg'style='height:130%;width:120%;
+																position:relative;
+																right:12%;opacity:0.90;'/>
+
+					</div>
+					<div id=''class='col-md-12'style='border:1px none;height:65%;margin-top:10px;'>
+							<div id=''class='col-md-10 col-md-offset-1'style='border-bottom:3px solid black;text-align:center;font-size:1.4em;position:relative;top:10%;'>
+							<span class='col-md-8 col-md-offset-2'style='border-bottom:1px solid black;'>Oscar Medrano</span>
+
+							<div id=''class='col-md-12'style='padding:1%;'>
+								New York, New York
+								
+							</div>
+							<div id=''class='col-md-12'style='padding:1%;height:10%;'>
+							<span class='col-md-3'>Github</span>
+							<span class='col-md-3'>
+								<img src='http://159.203.107.182:3000/img/main/GitHub-Mark-32px.png' style='width:40%;'/>
+
+							</span>
+							<a class='col-md-6'href='http://github.com/OhMedrano/'style='color:black;float:right;'>OhMedrano</a>
+							</div>
+							<div id=''class='col-md-12'style='padding:1%;height:10%;'>
+							<span class='col-md-3'>LinkedIn</span>
+							<span class='col-md-3'>
+								<img src='http://159.203.107.182:3000/img/main/In-Black-14px.png'style='width:35%;'/>
+
+							</span>
+							<a class='col-md-6'href='https://www.linkedin.com/in/oscarmedrano'style='color:black;float:right;'>O. Medrano
+							</a>
+							</div>
+
+							</div>
+
+							</div>
+
+							                                                                                                                                                                                     
+							
+
+					
+
+			</div>
+
+			<div id=''class='col-md-8'style='border:1px none;height:100%;'>
+			
+
+				<div id='aboutResume'class='col-md-12 cinz'style='border:1px none;height:100%;'>
+					<div id=''class='col-md-12'style='border-bottom:1px none;padding:1%;'>
+									<h3 class='col-md-3'style='border-bottom:1px none;text-align:left;float:left;'>
+										<span class='col-md-12'style='border-bottom:1px solid black;'>Who am I?</span>
+									</h3>
+									<div id=''class='col-md-12 'style='border:1px none;'>
+									 
+									 	<div id=''class='col-md-8'style='height:10vh;border:1px none;padding:3%;float:left;font-size:1.3em;'>
+									 	I'm just a guy who likes to code, play guitar, and beat friends in video games. 
+
+									 	</div>
+									 	<div id=''class='col-md-8 muli'style='float:right;text-align:right;font-size:1.4em;'>
+									 	
+
+
+
+
+
+
+									 	</div>
+
+									</div>
+
+							</div>
+						<div id='resumeWindowLeft'class='col-md-6'style='border:1px none;height:100%;'>
+							<div id=''class='col-md-12'style='border:1px none;'>
+								<div id='skillSetWindow'class='col-md-12 cinz'style='border-bottom:1px solid black;font-weight:bold;'>
+								<h3>Skill set</h3>
+								</div>
+								<div id=''class='col-md-12 cinz'style=''>
+									<div ng-repeat='skills in skillSet' id=''class='col-md-12'style='margin-bottom:3%;'>
+										<div id=''class='col-md-12'style='border-bottom:1px solid black;'>
+										{{skills.name}}
+
+										</div>
+										<div ng-repeat='skill in skills.skill'class='col-md-12'>
+											<div id=''class='col-md-12'style=''>
+												{{skill.skill}}
+											</div>
+											<div id=''class='col-md-12'style='position:relative;'>
+												<skill-Exp exp='skill.exp'></skill-Exp>
+
+											</div>
+
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>	
+						<div id=''class='col-md-6'style='border:1px none;height:100%;'>
+							<div id=''class='col-md-12'style='border:1px none;'>
+								<div id=''class='col-md-12 cinz'style='border-bottom:1px solid black;text-align:right;'>
+									<h3>Work History</h3>
+
+								</div>
+									<div id=''class='col-md-12 cinz'style='border:1px none;text-align:center;'>
+										<div ng-repeat='work in workHist'id=''class='col-md-12'style='margin:2%;'>
+											<div id=''class='col-md-12'style='border-bottom:1px solid black;'>
+											<span class='col-md-6'style='float:left;'>{{work.name}}</span>
+											<span class='col-md-6'ng-if='work.present == true'style='float:right'>
+											Present
+
+											</span>
+											</div>
+
+											<div id=''class='col-md-8 col-md-offset-2'style='border-bottom:1px solid black;text-align:center;'>
+											<span class='col-md-12'style='float:left;'>From: {{work.startDate}}
+
+											<span class='col-md-12'ng-if='work.present == false'style='float:right;'>
+											To: {{work.endDate}}
+
+											</span>
+											</div>
+											<div id=''class='col-md-12'style='text-align:center;margin-bottom:2%;'>
+											{{work.position}}
+
+											</div>
+											<div id=''class='col-md-12'style='text-align:center;'>
+												<div id=''class='col-md-6 col-md-offset-3'style='border-bottom:1px solid black;'>
+												Responsiblities
+
+
+												</div>
+												<div id=''class='col-md-12'ng-repeat='res in work.respon'>
+
+												{{res}}
+												</div>
+												
+
+
+
+											</div>
+
+
+										</div>
+									</div>
+
+							</div>
+
+						</div>
+						
+				</div>
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+
+	</div>
+
+	<!-- MOBILE -->
+	<div id=''class='hidden-md hidden-lg cinz'style=''>
+
+		<div id=''class='col-xs-12'style=''>
+		<h3> Oscar Medrano </h3>
+		</div>
+
+		<div id=''class='col-xs-12'style='height:40vh;border:1px none;'>
+			<div id=''class='col-xs-8 col-xs-offset-2'style='height:80%;border:1px none;border-radius:50%;
+											background:url(images/mainFace.jpg) no-repeat;background-size:cover;'>
+
+
+			</div>
+
+			<div id=''class='col-xs-12'style='border:1px none;'>
+			<span class='col-xs-3'>Github</span>
+			<span class='col-xs-3'><img src='http://159.203.107.182:3000/img/main/GitHub-Mark-32px.png' style='width:40%;'/></span>
+			<span class='col-xs-6'style='text-align:right;'>
+				<a ng-href='http://github.com/ohmedrano'style='color:black;'>OhMedrano</a>
+			</span>
+			</div>
+			<div id=''class='col-xs-12'style='border:1px none;'>
+			<span class='col-xs-3'>LinkedIn</span>
+			<span class='col-xs-3'><img src='http://159.203.107.182:3000/img/main/In-Black-14px.png'style='width:35%;'/></span>
+			<span class='col-xs-6'style='text-align:right;'>
+				<a ng-href='http://github.com/ohmedrano'style='color:black;'>O. Medrano</a>
+			</span>
+			</div>
+
+
+		</div>
+
+		<div id=''class='col-xs-12'style=''>
+			<div id=''class='col-xs-4'style='text-align:right;border-bottom:1px solid black;float:right;'>
+			Who Am I?
+
+			</div>
+			<div id=''class='col-xs-12'style='text-align:right;padding:1%;'>
+			A guy who likes to play guitar, video games and code on his free time.
+			</div>
+
+			<div id=''class='col-xs-6 col-xs-offset-3'style='border-bottom:1px solid black;padding:3%;'>
+
+
+			</div>
+
+		</div>
+
+
+		<div id=''class='col-xs-12'style='text-align:center;'>
+			<span class='col-xs-6'ng-click='switched = true'><h3>Skills</h3></span>
+			<span class='col-xs-6'ng-click='switched = false'><h3>Work</h3></span>
+		</div>
+
+		<div ng-if='switched == true' id='aboutSmSkills'class='col-xs-12'style='margin-bottom:4%;'>
+			<div id=''class=''style=''>
+				<div ng-repeat='skills in skillSet'id=''class=''style=''>
+					<div id=''class='col-xs-8'style='border-bottom:1px solid black;'>
+					<h4>{{skills.name}}</h4>
+					</div>
+					<div ng-repeat='skill in skills.skill'id=''class='col-xs-12'style=''>
+						<span class='col-xs-12'style=''>
+							{{skill.skill}}
+						</span>
+						<span class='col-xs-12'style=''>
+							<skill-Exp exp='skill.exp'></skill-Exp>
+						</span>
+
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+		</div>
+
+
+		<div ng-if='switched == false'id=''class='col-xs-12'style='margin-bottom:4%;'>
+			<div id=''class=''style=''>
+				<div ng-repeat='work in workHist'class=''id=''style='margin-bottom:3%;'>
+					<div id=''class='col-xs-8'style='border-bottom:1px solid black;'>
+					<span class='col-xs-9'style='font-weight:bold'>{{work.name}}</span>
+					<span class='col-xs-3'ng-if='work.present == true'style='float:right;'>
+											Present</span>
+					</div>	
+					<div id=''class='col-xs-12'style=''>
+					<span class='col-xs-3'>From: </span>
+
+					<span class='col-xs-8'>{{work.startDate}}</span>
+
+
+					</div>
+					<span class='col-xs-12'ng-if='work.present == false'style='float:right;'>
+											<span class='col-xs-3'>To:</span>
+
+
+						<span class='col-xs-8'> {{work.endDate}}</span>
+
+
+					</span>
+
+					<div id=''class='col-xs-12'style='text-align:center;'>
+						<div id=''class='col-xs-8 col-xs-offset-2'style='font-size:1.2em;border-bottom:1px solid black;text-align:center;'>
+							 {{work.position}}
+
+						</div>
+						<div id=''class='col-xs-12'style=''>
+							<span class='col-xs-12'style=''>
+							Responsiblities
+							</span>
+							<div ng-repeat='res in work.respon'id=''class='col-xs-12'style=''>
+							{{res}}
+
+
+							</div>
+
+
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+	</div>
+
+
+</div>

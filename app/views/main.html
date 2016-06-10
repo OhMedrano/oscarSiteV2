@@ -1,0 +1,135 @@
+<div id=''class=''style=''>
+
+    <!-- DESKTOP VERSION -->
+    <div ng-init=''id=''class='hidden-sm hidden-xs col-md-8 col-md-offset-2'style='height:95vh;
+                                                border:4px none;
+                                                padding:0;
+                                                overflow:hidden;'>
+                                               <div id=''class='col-md-6 col-md-offset-4 '>
+         <uib-pagination total-items="blogs.length" id='pageStuff'ng-model="currentPage" max-size="maxSize" class="pagination-sm candal" boundary-links="true" items-per-page="itemsPerPage"></uib-pagination>
+      </div>
+                <div ng-repeat='blog in blogs.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | createdBy 'id=''class='col-md-6 right'style='border:1px none;
+                                                  height:38vh;margin-bottom:2%;'>
+
+                                              
+                    <div id=''class='col-md-11 col-md-offset-1'style='border-top:1px none;
+                                                                      border-left:1px none;
+                                                                      border-right:1px solid black;
+                                                                      border-bottom:1px solid black;
+                                                                      height:100%;
+                                                                      padding:1%;
+                                                                      '>
+                                <div id=''class='col-md-12 cinz'style='border-bottom:1px solid black;
+                                                                  text-align:left;'>
+
+                                    <span class='col-md-8'style='float:left'><h4>{{blog.title}}</h4></span>
+                                    <span class='col-md-4'style='border:1px none;float:right;'>
+
+                                    {{blog.created | date}}
+                                    </span>
+                                </div>
+                                <div id=''class='col-md-12 cinz'style='height:80%;border-bottom:1px solid black;overflow:hidden;padding:1%;'>
+
+                                <p ng-bind-html='blog.content | lineBreak'></p>
+
+                                </div>
+                                <div id=''class='col-md-3'style='border:1px none;float:right;
+                                                                text-align:left;'>
+                                <a href='/#/blog/{{blog._id}}'>Read more...</a>
+
+                                </div>
+
+                      </div> 
+                </div>
+                
+
+
+
+                 <!--  <div id=''class='col-md-6'style='border:1px none;
+                                                  height:30vh;'>
+
+                                                  
+                        <div id=''class='col-md-10 col-md-offset-1'style='border-top:1px solid black;
+                                                                          border-left:1px solid black;
+                                                                          border-right:3px solid black;
+                                                                          border-bottom:4px solid black;
+                                                                          height:100%;
+                                                                          padding:1%;
+                                                                          '>
+                                    <div id=''class='col-md-12'style='border-bottom:1px solid black;
+                                                                      text-align:left;'>
+
+                                        <span class='col-md-8'style='float:left'>Title</span>
+                                        <span class='col-md-4'style='border:1px none;float:right;'>
+
+                                        Mnt/Day/Year
+                                        </span>
+                                    </div>
+                                    <div id=''class='col-md-12'style='height:80%;border-bottom:1px solid black;overflow:hidden;'>
+
+
+
+                                    </div>
+                                    <div id=''class='col-md-3'style='border:1px none;float:right;
+                                                                    text-align:left;'>
+                                    Read more...
+
+                                    </div>
+
+                          </div> 
+                </div>
+ -->
+
+
+          <div id=''class='col-md-12 cinz'style=''>
+          Hosting provided by <a href='http://Atabyte.net'>Atabyte Hosting</a>
+
+          </div>
+    </div>
+
+    <!-- MOBILE VERSION -->
+    <div id=''class='hidden-md hidden-lg cinz'style='height:auto;
+                                                border:1px solid black;'>
+
+               <div id=''class='col-xs-12 '>
+         <uib-pagination total-items="blogs.length" id='pageSmStuff'ng-model="currentPage" max-size="maxSize" class="pagination-sm candal" boundary-links="true" items-per-page="itemsPerPage"></uib-pagination>
+      </div>
+
+        <div ng-repeat='blog in blogs.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | createdBy 'id=''class='col-xs-10 col-xs-offset-1 cinz'style='border:1px none;
+                                                  height:auto;margin-bottom:5%;'>
+                        <div id=''class='col-xs-12'style='border-bottom:2px solid black;border-right:2px solid black;overflow:hidden;height:60vh;'>
+                          <div id=''class='col-xs-12'style='border-bottom:1px solid black;'>
+                          <h4 class='col-xs-6'>{{blog.title}}</h4>
+                          <h5 class='col-xs-6'>{{blog.created | date}} </h5>
+
+                          </div>
+
+                          <div id=''class='col-xs-12'style='border-bottom:1px solid black;height:60%;overflow:hidden;'>
+                          <p ng-bind-html='blog.content | lineBreak'></p>
+
+
+                          </div>
+                          <div id=''class='col-xs-12'style='border:1px none;padding:4%;'>
+
+                            <span class='col-xs-7'style='float:right;border:1px none'><a ng-href='/#/blog/{{blog._id}}'style='color:black;'>Read more...</a></span>
+
+
+                          </div>
+
+                        </div>
+                    
+
+                </div>
+                
+     
+
+
+
+
+    </div>
+
+
+
+
+
+</div>

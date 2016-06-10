@@ -1,0 +1,375 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/* First one, possible take Righteous
+
+*/
+
+
+/*
+  Second One, checking out now.
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato|Muli|Abel|Exo|Cinzel|Montserrat|Roboto+Slab|Play|Orbitron);
+
+.lato {
+  font-family:'Lato',sans-serif;
+}
+.muli {
+  font-family:'Muli',sans-serif;
+}
+.abel {
+  font-family:'Abel',sans-serif;
+}
+.exo {
+  font-family:'Exo',sans-serif;
+}
+.cinz {
+  font-family:'Cinzel',serif;
+}
+.mont {
+  font-family:'Montserrat',sans-serif;
+}
+.robo {
+  font-family:'Roboto Slab',serif;
+}
+.play {
+  font-family:'Play',sans-serif;
+}
+.orbit {
+  font-family:'Orbitron',sans-serif;
+}
+
+.icon-bar {
+  color:black;
+  position:static;
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+} 
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.right {
+  font-family:'Righteous',cursive;
+}
+.fjalla {
+  font-family:'Fjalla One', sans-serif;
+}
+.candal {
+  font-family:'Candal',sans-serif;
+}
+.anton {
+  font-family:'Anton',sans-serif;
+}
+
+#pageSmStuff{
+  padding:0;
+  .active {
+   a{
+    border-radius:40%;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGBowIKpLggAfgcMga1HCpIAAAAASUVORK5CYII=) repeat;
+    color:white;
+
+    }
+  
+  }
+
+.pagination-first {
+  a{
+    
+    visibility: hidden;
+    padding:5px 8px;
+  }
+  a:after{
+    content:"| <";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    color:black;
+    font-size:14px;
+  }
+
+
+} 
+
+.pagination-prev {
+  a{
+    
+    visibility: hidden;
+     padding:5px 0px;
+  }
+  a:after{
+    content:"<<";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    width:100%;
+    color:black;
+    font-size:14px;
+
+  }
+
+  
+}
+.pagination-next {
+  a{
+    
+    visibility: hidden;
+    padding:5px 5px;
+  }
+  a:after{
+    content:">>";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    color:black;
+    font-size:14px;
+  }
+
+
+} 
+
+.pagination-last {
+  a{
+    
+    visibility: hidden;
+    padding:2px 5px;
+  }
+  a:after{
+    content:"> |";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    color:black;
+    font-size:14px;
+  }
+
+  
+}
+
+
+
+
+.pagination-page {
+  a {
+     background-color:none;
+     border:1px none;
+     margin:2px;
+     color:black;
+     font-size:14px;
+     padding:5px 8px;
+    }
+  }
+    a{
+         border-radius:0;
+    }
+
+
+
+}
+
+
+#pageStuff {
+
+.active {
+  a{
+    border-radius:50%;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGBowIKpLggAfgcMga1HCpIAAAAASUVORK5CYII=) repeat;
+    color:white;
+
+  }
+  
+}
+
+.pagination-first {
+  a{
+    
+    visibility: hidden;
+  }
+  a:after{
+    content:"| <";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    color:black;
+  }
+
+
+} 
+
+.pagination-prev {
+  a{
+    
+    visibility: hidden;
+  }
+  a:after{
+    content:"<<";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    width:100%;
+    color:black;
+  }
+
+  
+}
+.pagination-next {
+  a{
+    
+    visibility: hidden;
+  }
+  a:after{
+    content:">>";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    color:black;
+  }
+
+
+} 
+
+.pagination-last {
+  a{
+    
+    visibility: hidden;
+  }
+  a:after{
+    content:"> |";
+    visibility: visible;
+    display:block;
+    border:1px none;
+    position:relative;
+    bottom:1.4em;
+    color:black;
+  }
+
+  
+}
+
+
+
+
+.pagination-page {
+  a {
+     background-color:none;
+     border:1px none;
+     margin:2px;
+     color:black;
+    }
+  }
+    a{
+         border-radius:0;
+    }
+
+
+}
+
+
+
+.imgBack {
+    
+  border:4px solid black;
+
+}
+
+.textBack {
+  border:20px solid black;
+}
