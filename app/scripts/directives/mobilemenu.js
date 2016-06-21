@@ -23,13 +23,11 @@ angular.module('oscarSiteV2App')
               scope.chev = 'right';
         		 	scope.mobile = false;
         		 	console.log(scope.mobile);
-        		 	$('#displayMenu').removeClass('animated fadeInRight');
-        		 	$('#displayMenu').addClass('animated fadeOutRight');
+        		 
         		 } else {
               //THIS PUTS IT IN.  YOU WANT THIS TO GO POINT LEFT
               scope.chev = 'left';
-        		 	$('#displayMenu').removeClass('animated fadeOutRight');
-        		 	$('#displayMenu').addClass('animated fadeInRight');
+        		
         		 	scope.mobile = true;
         		 	console.log(scope.mobile);
 
